@@ -5,3 +5,4 @@ function productSelf(nums){
     }
     return nums
 }
+//productSelf([1,2,3,4])
