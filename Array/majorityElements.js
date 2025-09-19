@@ -9,6 +9,8 @@ function mejorityElement(nums){
     }
     return candidate;
 }
+// console.log(mejorityElement([2,2,1,1,1,2,2]))
+
 
 function majorityWithHash(nums){
     let map={}
@@ -24,3 +26,4 @@ function majorityWithHash(nums){
         }
     }
 }
+// console.log(majorityWithHash([2,2,1,1,1,2,2]))

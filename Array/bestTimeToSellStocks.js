@@ -12,3 +12,18 @@ function maxProfit(nums){
     }
     return maxProfit
 }
+//console.log(maxProfit([7,1,5,3,6,4]))
+
+function alternative(nums){
+    let minPrice=0;
+    let max=0
+    for(let i=0;i<nums.length;i++){
+        if(nums[i] < nums[minPrice]){
+            minPrice=i
+        }
+        let profit = nums[i] - nums[minPrice]
+        max = Math.max(max,profit)
+    }
+    return max
+}
+//console.log(alternative([7,1,5,3,6,4]))
